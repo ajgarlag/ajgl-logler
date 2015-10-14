@@ -1,0 +1,22 @@
+{
+    "alias": "logler.phar",
+    "chmod": "0755",
+    "compactors": [
+        "Herrera\\Box\\Compactor\\Php"
+    ],
+    "directories": ["src"],
+    "extract": true,
+    "finder": [
+        {
+            "name": "*.php",
+            "exclude": [
+                "Tests"
+            ],
+            "in": "vendor"
+        }
+    ],
+    "git-version": "logler-version",
+    "main": "bin/logler",
+    "output": "logler.phar",
+    "stub": true
+}
